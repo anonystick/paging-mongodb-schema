@@ -1,0 +1,56 @@
+### insert Bucket
+
+POST http://localhost:3051/v1/api/bucket-comments
+Content-Type: application/json
+
+{
+    "blogId": 1,
+    "commentId": 14,
+    "email": "anonsytick@gmail.com",
+    "body": "Number 4",
+    "name": "anonystick"
+}
+
+### insert Event
+
+POST http://localhost:3051/v1/api/atom-events
+Content-Type: application/json
+
+{
+    "userId": 1
+}
+
+### insert Comments
+
+POST http://localhost:3051/v1/api/Comments
+Content-Type: application/json
+
+{
+    "blogId": 1,
+    "commentId": 0,
+    "email": "anonsytick@gmail.com",
+    "body": "Content.... so great! 4",
+    "name": "anonystick"
+}
+
+### insert Comments
+
+POST http://localhost:3051/v1/api/commentMany
+Content-Type: application/json
+
+{
+
+}
+
+### list comments
+
+GET http://localhost:3051/v1/api/Comments?blogId=1&page=2&pagesize=50
+
+
+### list comments-hacknew
+
+GET http://localhost:3051/v1/api/comments-hacknew?commentId=60&pagesize=30
+
+### bucket-comments
+
+GET http://localhost:3051/v1/api/bucket-comments?blogId=1&page=2
